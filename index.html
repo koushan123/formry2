@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#1A1018"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>ANGER RELEASE — Release what you cannot say</title></head>
+<body>
+<canvas id="world" aria-label="First-person boxing arena"></canvas>
+<div id="vignette"></div><div id="release-effect"></div><div id="damage-flash"></div>
+<header><a class="brand" href="#" id="brand">AR<span>ANGER<br>RELEASE</span></a><div class="edition">RELEASE WHAT YOU CANNOT SAY.<br><span>A STYLISH WAY TO LET GO.</span></div><button class="icon-button" id="sound" aria-label="Mute audio">SOUND ON</button></header>
+<main id="menu" class="panel">
+ <div class="eyebrow"><i></i> A PERSONAL ANGER-RELEASE EXPERIENCE</div>
+ <h1>ANGER<br><em>RELEASE</em></h1>
+ <p class="menu-tagline">Release what you cannot say.</p>
+ <div class="profile"><img class="portrait" src="/player-portrait.jpg" alt="Player portrait — Kusean"><span class="player-name">KUSEAN</span></div>
+ <p class="intro">Step into the rose-lit ring.<br>Face Static — the shape of everything that frustrated you today.</p>
+ <button id="start" class="primary">START <span>↗</span></button>
+ <div class="menu-links"><button id="scenarios">01 / SCENARIOS</button><button id="settings">02 / SETTINGS</button><button id="quit">EXIT ↗</button></div>
+ <div class="session-note"><span>●</span> ONE ROOM. ZERO BAGGAGE.<small>First-person arcade boxing · Desktop experience</small></div>
+</main>
+<aside id="preview-card"><span class="eyebrow">SCENARIO 01 / READY TO RELEASE</span><h2>THE VELVET RING</h2><p>Meet Static. A dark silhouette with rose-glowing eyes — your frustration, made solid.</p><div><span>DIFFICULTY <b id="menu-difficulty">NORMAL</b></span><span>1–4 MIN ROUND</span></div></aside>
+<footer id="menu-footer"><span>FICTIONAL FIGHTS. REAL RELEASE.</span><span>VOL. 01 <b> / </b> THE VELVET RING</span></footer>
+<section id="hud" hidden>
+ <div class="enemy-hud"><div><span>STATIC</span><small id="enemy-state">READY</small><b id="enemy-value">240</b></div><div class="track"><i id="enemy-bar"></i></div></div>
+ <div class="round-label">THE VELVET RING / <b id="round-difficulty">NORMAL</b><span id="timer">00:00</span></div>
+ <div class="combat-cue-wrap"><div id="combat-cue">CLOSE IN. FIND YOUR RHYTHM.</div><div class="track"><i id="warning-bar"></i></div></div>
+ <div id="crosshair">+</div><div id="hit-marker">×</div><div id="callout"></div>
+ <div id="attack-status"></div>
+ <div class="bottom-hud"><div class="player-hud"><div class="profile" style="margin-bottom:10px"><img class="portrait-hud" src="/player-portrait.jpg" alt="Player portrait — Kusean"><span class="player-name" style="font-size:16px">KUSEAN</span></div><div class="meter-label">HEALTH <b id="health-value">100</b></div><div class="track"><i id="health-bar"></i></div><small id="dodge-status">SHIFT / DODGE READY</small></div><div class="combo-hud"><b id="combo-value">×0</b><span id="combo-label">HIT COMBO</span><div class="track"><i id="combo-timer"></i></div></div><div class="release-hud"><div class="meter-label"><span id="release-label">RELEASE</span><b id="release-value">0%</b></div><div class="track"><i id="release-bar"></i></div><small id="release-note">LAND HITS. LET IT OUT.</small></div></div>
+ <div class="control-strip" id="control-strip"><span><kbd>W A S D</kbd> MOVE</span><span><kbd>MOUSE</kbd> LOOK</span><span><kbd>LMB</kbd> PUNCH</span><span><kbd>RMB</kbd> BLOCK</span><span><kbd>SHIFT</kbd> DODGE</span><span><kbd>ESC</kbd> PAUSE</span></div>
+</section>
+<section id="modal" class="modal" hidden><div class="dialog" id="dialog"></div></section>
+<div id="toast" role="status"></div>
+<script type="module" src="/src/main.js"></script>
+</body></html>

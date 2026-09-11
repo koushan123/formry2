@@ -1,0 +1,28 @@
+{
+  "browser": "152.0.7977.83",
+  "viewport": "1440x900",
+  "rendering": {
+    "fps": 80.48039069118452,
+    "p95FrameMs": 14.199999809265137,
+    "maxFrameMs": 41.600000000000364,
+    "drawCalls": 148,
+    "triangles": 5706
+  },
+  "before": {
+    "geometries": 13,
+    "textures": 6,
+    "voices": 0,
+    "noiseBuffers": 6,
+    "particlePool": 48,
+    "heap": 5098908
+  },
+  "after": {
+    "geometries": 13,
+    "textures": 6,
+    "voices": 0,
+    "noiseBuffers": 6,
+    "particlePool": 48,
+    "heap": 5444932
+  },
+  "heapDelta": 346024
+}
